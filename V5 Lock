@@ -56,7 +56,7 @@ local function DVPH_fake_script() -- Titsd.LocalScript
     script.Parent.Text = "Created By Twrnz on Roblox (1)"
     wait(2)
     script.Parent.Parent.Parent.Cock.Visible = false
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/ForcedProject/ForcedProjectRoblox/main/DaHoodSilentAim.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/twrnz/SNiPeR-Assist/main/V5%20Base"))()
     wait(1)
     script.Parent.Parent.Parent.TextLabel.Text = "Twrnz (25)"
     wait(1)
