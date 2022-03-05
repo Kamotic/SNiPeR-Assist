@@ -1,5 +1,5 @@
-local Aiming = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kamotic/SNiPeR-Assist/main/v4-base"))()
-Aiming.TeamCheck(false)
+local Aiming = loadstring(game:HttpGet("https://raw.githubusercontent.com/twrnz/SNiPeR-Assist/main/V5%20Base"))()
+Aiming.TeamCheck(true)
 
 local Workspace = game:GetService("Workspace")
 local Players = game:GetService("Players")
