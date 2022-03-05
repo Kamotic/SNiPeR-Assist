@@ -46,10 +46,6 @@ getgenv().Aiming = {
         },
         Players = {
             LocalPlayer,
-            nwckz,
-            uhjgfhdjkghsgh,
-            chunks361,
-            blackpanthercal03,
         }
     }
 }
