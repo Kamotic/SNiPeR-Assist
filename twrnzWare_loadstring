@@ -1,0 +1,83 @@
+loadstring(game:HttpGet('https://raw.githubusercontent.com/twrnz/SNiPeR-Assist/main/v4-lock'))()
+wait(0.1)
+game.StarterGui:SetCore("SendNotification", {
+	Title = "KamoticWare";
+	Text = "KamoticWare (Enhanced 4 Chunks361) Launched! , Cleared Logs! , F7 To Open & Close The Menu | Kamotic#7869 on Discord For Help";
+	Icon = ""; 
+	Duration = 16;
+})
+--Scripting | Kamotic#7869 on Discord
+--Design | Kamotic#7869 on Discord
+local function CreateInstance(cls,props)
+local inst = Instance.new(cls)
+for i,v in pairs(props) do
+	inst[i] = v
+end
+return inst
+end
+	
+local ScreenGui = CreateInstance('ScreenGui',{DisplayOrder=0,Enabled=true,ResetOnSpawn=true,Name='ScreenGui', Parent=game.CoreGui})
+
+local main = CreateInstance('Frame',{Style=Enum.FrameStyle.Custom,Active=true,AnchorPoint=Vector2.new(0, 0),BackgroundColor3=Color3.new(0.176471, 0.176471, 0.176471),BackgroundTransparency=0,BorderColor3=Color3.new(0.176471, 0.176471, 0.176471),BorderSizePixel=1,ClipsDescendants=false,Draggable=true,Position=UDim2.new(0.0789252743, 0, 0.182359949, 0),Rotation=0,Selectable=false,Size=UDim2.new(0, 465, 0, 284),SizeConstraint=Enum.SizeConstraint.RelativeXY,Visible=true,ZIndex=1,Name = 'main',Parent = ScreenGui})
+function onKeyPress(inputObject, gameProcessedEvent) 
+	if inputObject.KeyCode == Enum.KeyCode.F7 then
+		if main.Visible == false then
+			main.Visible = true
+		else
+			main.Visible = false
+		end
+	end
+end
+
+game:GetService("UserInputService").InputBegan:connect(onKeyPress)
+
+local Gui_Title = CreateInstance('TextLabel',{Font=Enum.Font.SciFi,FontSize=Enum.FontSize.Size18,Text='KamoticWare (Enhanced 4 Chunks361)',TextColor3=Color3.new(1, 1, 1),TextScaled=false,TextSize=18,TextStrokeColor3=Color3.new(0, 0, 0),TextStrokeTransparency=1,TextTransparency=0,TextWrapped=true,TextXAlignment=Enum.TextXAlignment.Center,TextYAlignment=Enum.TextYAlignment.Center,Active=false,AnchorPoint=Vector2.new(0, 0),BackgroundColor3=Color3.new(0.176471, 0.176471, 0.176471),BackgroundTransparency=0,BorderColor3=Color3.new(0.176471, 0.176471, 0.176471),BorderSizePixel=1,ClipsDescendants=false,Draggable=false,Position=UDim2.new(0.211376607, 0, 0, 0),Rotation=0,Selectable=false,Size=UDim2.new(0, 265, 0, 50),SizeConstraint=Enum.SizeConstraint.RelativeXY,Visible=true,ZIndex=1,Name='Gui Title',Parent = main})
+
+local Silent_Aim__Enable = CreateInstance('TextButton',{Font=Enum.Font.SciFi,FontSize=Enum.FontSize.Size24,Text='Silent Aim | Enable',TextColor3=Color3.new(1, 1, 1),TextScaled=false,TextSize=22,TextStrokeColor3=Color3.new(0, 0, 0),TextStrokeTransparency=1,TextTransparency=0,TextWrapped=false,TextXAlignment=Enum.TextXAlignment.Center,TextYAlignment=Enum.TextYAlignment.Center,AutoButtonColor=true,Modal=false,Selected=false,Style=Enum.ButtonStyle.Custom,Active=true,AnchorPoint=Vector2.new(0, 0),BackgroundColor3=Color3.new(0.176471, 0.176471, 0.176471),BackgroundTransparency=0,BorderColor3=Color3.new(1, 1, 1),BorderSizePixel=1,ClipsDescendants=false,Draggable=false,Position=UDim2.new(0.0130434781, 0, 0.25252524, 0),Rotation=0,Selectable=true,Size=UDim2.new(0, 185, 0, 38),SizeConstraint=Enum.SizeConstraint.RelativeXY,Visible=true,ZIndex=1,Name='Silent Aim | Enable',Parent = main})
+Silent_Aim__Enable.MouseButton1Down:connect(function()
+	Aiming.Enabled = true
+end)
+
+local Silent_Aim__Disable = CreateInstance('TextButton',{Font=Enum.Font.SciFi,FontSize=Enum.FontSize.Size24,Text='Silent Aim | Disable',TextColor3=Color3.new(1, 1, 1),TextScaled=false,TextSize=22,TextStrokeColor3=Color3.new(0, 0, 0),TextStrokeTransparency=1,TextTransparency=0,TextWrapped=false,TextXAlignment=Enum.TextXAlignment.Center,TextYAlignment=Enum.TextYAlignment.Center,AutoButtonColor=true,Modal=false,Selected=false,Style=Enum.ButtonStyle.Custom,Active=true,AnchorPoint=Vector2.new(0, 0),BackgroundColor3=Color3.new(0.176471, 0.176471, 0.176471),BackgroundTransparency=0,BorderColor3=Color3.new(1, 1, 1),BorderSizePixel=1,ClipsDescendants=false,Draggable=false,Position=UDim2.new(0.584782541, 0, 0.25252524, 0),Rotation=0,Selectable=true,Size=UDim2.new(0, 185, 0, 38),SizeConstraint=Enum.SizeConstraint.RelativeXY,Visible=true,ZIndex=1,Name='Silent Aim | Disable',Parent = main})
+Silent_Aim__Disable.MouseButton1Down:connect(function()
+	Aiming.Enabled = false
+end)
+
+local Visible_FOV__Enable = CreateInstance('TextButton',{Font=Enum.Font.SciFi,FontSize=Enum.FontSize.Size24,Text='Visible FOV | Enable',TextColor3=Color3.new(1, 1, 1),TextScaled=false,TextSize=22,TextStrokeColor3=Color3.new(0, 0, 0),TextStrokeTransparency=1,TextTransparency=0,TextWrapped=false,TextXAlignment=Enum.TextXAlignment.Center,TextYAlignment=Enum.TextYAlignment.Center,AutoButtonColor=true,Modal=false,Selected=false,Style=Enum.ButtonStyle.Custom,Active=true,AnchorPoint=Vector2.new(0, 0),BackgroundColor3=Color3.new(0.176471, 0.176471, 0.176471),BackgroundTransparency=0,BorderColor3=Color3.new(1, 1, 1),BorderSizePixel=1,ClipsDescendants=false,Draggable=false,Position=UDim2.new(0.0109711066, 0, 0.513088584, 0),Rotation=0,Selectable=true,Size=UDim2.new(0, 185, 0, 38),SizeConstraint=Enum.SizeConstraint.RelativeXY,Visible=true,ZIndex=1,Name='Visible FOV | Enable',Parent = main})
+Visible_FOV__Enable.MouseButton1Down:connect(function()
+	Aiming.ShowFOV = true
+end)
+
+local Visible_FOV__Disable = CreateInstance('TextButton',{Font=Enum.Font.SciFi,FontSize=Enum.FontSize.Size24,Text='Visible FOV | Disable',TextColor3=Color3.new(1, 1, 1),TextScaled=false,TextSize=22,TextStrokeColor3=Color3.new(0, 0, 0),TextStrokeTransparency=1,TextTransparency=0,TextWrapped=false,TextXAlignment=Enum.TextXAlignment.Center,TextYAlignment=Enum.TextYAlignment.Center,AutoButtonColor=true,Modal=false,Selected=false,Style=Enum.ButtonStyle.Custom,Active=true,AnchorPoint=Vector2.new(0, 0),BackgroundColor3=Color3.new(0.176471, 0.176471, 0.176471),BackgroundTransparency=0,BorderColor3=Color3.new(1, 1, 1),BorderSizePixel=1,ClipsDescendants=false,Draggable=false,Position=UDim2.new(0.584219515, 0, 0.513088584, 0),Rotation=0,Selectable=true,Size=UDim2.new(0, 185, 0, 38),SizeConstraint=Enum.SizeConstraint.RelativeXY,Visible=true,ZIndex=1,Name='Visible FOV | Disable',Parent = main})
+Visible_FOV__Disable.MouseButton1Down:connect(function()
+	Aiming.ShowFOV = false
+end)
+
+local FOV_Size = CreateInstance('TextLabel',{Font=Enum.Font.SciFi,FontSize=Enum.FontSize.Size18,Text='FOV Size',TextColor3=Color3.new(1, 1, 1),TextScaled=false,TextSize=18,TextStrokeColor3=Color3.new(0, 0, 0),TextStrokeTransparency=1,TextTransparency=0,TextWrapped=true,TextXAlignment=Enum.TextXAlignment.Center,TextYAlignment=Enum.TextYAlignment.Center,Active=false,AnchorPoint=Vector2.new(0, 0),BackgroundColor3=Color3.new(0.176471, 0.176471, 0.176471),BackgroundTransparency=0,BorderColor3=Color3.new(0.176471, 0.176471, 0.176471),BorderSizePixel=1,ClipsDescendants=false,Draggable=false,Position=UDim2.new(0.0107526891, 0, 0.704225361, 0),Rotation=0,Selectable=false,Size=UDim2.new(0, 90, 0, 22),SizeConstraint=Enum.SizeConstraint.RelativeXY,Visible=true,ZIndex=1,Name='FOV Size',Parent = main})
+
+local FOV_Size_Value = CreateInstance('TextBox',{ClearTextOnFocus=true,Font=Enum.Font.SciFi,FontSize=Enum.FontSize.Size14,MultiLine=false,Text='',TextColor3=Color3.new(1, 1, 1), PlaceholderText='', PlaceholderColor3=Color3.new(0.7, 0.7, 0.7),TextScaled=false,TextSize=14,TextStrokeColor3=Color3.new(0, 0, 0),TextStrokeTransparency=1,TextTransparency=0,TextWrapped=false,TextXAlignment=Enum.TextXAlignment.Center,TextYAlignment=Enum.TextYAlignment.Center,Active=true,AnchorPoint=Vector2.new(0, 0),BackgroundColor3=Color3.new(0.176471, 0.176471, 0.176471),BackgroundTransparency=0,BorderColor3=Color3.new(1, 1, 1),BorderSizePixel=1,ClipsDescendants=false,Draggable=false,Position=UDim2.new(0.227956995, 0, 0.718309879, 0),Rotation=0,Selectable=true,Size=UDim2.new(0, 53, 0, 18),SizeConstraint=Enum.SizeConstraint.RelativeXY,Visible=true,ZIndex=1,Name='FOV Size Value',Parent = main})
+
+local FOV_Shape = CreateInstance('TextLabel',{Font=Enum.Font.SciFi,FontSize=Enum.FontSize.Size18,Text='FOV Shape',TextColor3=Color3.new(1, 1, 1),TextScaled=false,TextSize=18,TextStrokeColor3=Color3.new(0, 0, 0),TextStrokeTransparency=1,TextTransparency=0,TextWrapped=true,TextXAlignment=Enum.TextXAlignment.Center,TextYAlignment=Enum.TextYAlignment.Center,Active=false,AnchorPoint=Vector2.new(0, 0),BackgroundColor3=Color3.new(0.176471, 0.176471, 0.176471),BackgroundTransparency=0,BorderColor3=Color3.new(0.176471, 0.176471, 0.176471),BorderSizePixel=1,ClipsDescendants=false,Draggable=false,Position=UDim2.new(0.0172042903, 0, 0.78169018, 0),Rotation=0,Selectable=false,Size=UDim2.new(0, 90, 0, 25),SizeConstraint=Enum.SizeConstraint.RelativeXY,Visible=true,ZIndex=1,Name='FOV Shape',Parent = main})
+
+local HitChance = CreateInstance('TextLabel',{Font=Enum.Font.SciFi,FontSize=Enum.FontSize.Size18,Text='HitChance',TextColor3=Color3.new(1, 1, 1),TextScaled=false,TextSize=18,TextStrokeColor3=Color3.new(0, 0, 0),TextStrokeTransparency=1,TextTransparency=0,TextWrapped=true,TextXAlignment=Enum.TextXAlignment.Center,TextYAlignment=Enum.TextYAlignment.Center,Active=false,AnchorPoint=Vector2.new(0, 0),BackgroundColor3=Color3.new(0.176471, 0.176471, 0.176471),BackgroundTransparency=0,BorderColor3=Color3.new(0.176471, 0.176471, 0.176471),BorderSizePixel=1,ClipsDescendants=false,Draggable=false,Position=UDim2.new(0.0172043014, 0, 0.869718313, 0),Rotation=0,Selectable=false,Size=UDim2.new(0, 90, 0, 25),SizeConstraint=Enum.SizeConstraint.RelativeXY,Visible=true,ZIndex=1,Name='HitChance',Parent = main})
+
+local HitChance_Value = CreateInstance('TextBox',{ClearTextOnFocus=true,Font=Enum.Font.SciFi,FontSize=Enum.FontSize.Size14,MultiLine=false,Text='',TextColor3=Color3.new(1, 1, 1), PlaceholderText='', PlaceholderColor3=Color3.new(0.7, 0.7, 0.7),TextScaled=false,TextSize=14,TextStrokeColor3=Color3.new(0, 0, 0),TextStrokeTransparency=1,TextTransparency=0,TextWrapped=false,TextXAlignment=Enum.TextXAlignment.Center,TextYAlignment=Enum.TextYAlignment.Center,Active=true,AnchorPoint=Vector2.new(0, 0),BackgroundColor3=Color3.new(0.176471, 0.176471, 0.176471),BackgroundTransparency=0,BorderColor3=Color3.new(1, 1, 1),BorderSizePixel=1,ClipsDescendants=false,Draggable=false,Position=UDim2.new(0.22795701, 0, 0.894366205, 0),Rotation=0,Selectable=true,Size=UDim2.new(0, 53, 0, 18),SizeConstraint=Enum.SizeConstraint.RelativeXY,Visible=true,ZIndex=1,Name='HitChance Value',Parent = main})
+
+local FOV_Shape_Value = CreateInstance('TextBox',{ClearTextOnFocus=false,Font=Enum.Font.SciFi,FontSize=Enum.FontSize.Size14,MultiLine=false,Text='(patched)',TextColor3=Color3.new(1, 1, 1), PlaceholderText='(patched)', PlaceholderColor3=Color3.new(0.7, 0.7, 0.7),TextScaled=true,TextSize=14,TextStrokeColor3=Color3.new(0, 0, 0),TextStrokeTransparency=1,TextTransparency=0,TextWrapped=true,TextXAlignment=Enum.TextXAlignment.Center,TextYAlignment=Enum.TextYAlignment.Center,Active=false,AnchorPoint=Vector2.new(0, 0),BackgroundColor3=Color3.new(0.176471, 0.176471, 0.176471),BackgroundTransparency=0,BorderColor3=Color3.new(1, 1, 1),BorderSizePixel=1,ClipsDescendants=false,Draggable=false,Position=UDim2.new(0.227956995, 0, 0.806338072, 0),Rotation=0,Selectable=false,Size=UDim2.new(0, 53, 0, 18),SizeConstraint=Enum.SizeConstraint.RelativeXY,Visible=true,ZIndex=1,Name='FOV Shape Value',Parent = main})
+
+local Credits = CreateInstance('TextLabel',{Font=Enum.Font.SciFi,FontSize=Enum.FontSize.Size18,Text='Credits | Kamotic#7869',TextColor3=Color3.new(1, 1, 1),TextScaled=false,TextSize=18,TextStrokeColor3=Color3.new(0, 0, 0),TextStrokeTransparency=1,TextTransparency=0,TextWrapped=true,TextXAlignment=Enum.TextXAlignment.Center,TextYAlignment=Enum.TextYAlignment.Center,Active=false,AnchorPoint=Vector2.new(0, 0),BackgroundColor3=Color3.new(0.176471, 0.176471, 0.176471),BackgroundTransparency=0,BorderColor3=Color3.new(0.176471, 0.176471, 0.176471),BorderSizePixel=1,ClipsDescendants=false,Draggable=false,Position=UDim2.new(0.611376643, 0, 0.869718313, 0),Rotation=0,Selectable=false,Size=UDim2.new(0, 180, 0, 37),SizeConstraint=Enum.SizeConstraint.RelativeXY,Visible=true,ZIndex=1,Name='Credits',Parent = main})
+
+local SetFOVSize = CreateInstance('TextButton',{Font=Enum.Font.SciFi,FontSize=Enum.FontSize.Size24,Text='Set',TextColor3=Color3.new(1, 1, 1),TextScaled=false,TextSize=22,TextStrokeColor3=Color3.new(0, 0, 0),TextStrokeTransparency=1,TextTransparency=0,TextWrapped=false,TextXAlignment=Enum.TextXAlignment.Center,TextYAlignment=Enum.TextYAlignment.Center,AutoButtonColor=true,Modal=false,Selected=false,Style=Enum.ButtonStyle.Custom,Active=true,AnchorPoint=Vector2.new(0, 0),BackgroundColor3=Color3.new(0.176471, 0.176471, 0.176471),BackgroundTransparency=0,BorderColor3=Color3.new(1, 1, 1),BorderSizePixel=1,ClipsDescendants=false,Draggable=false,Position=UDim2.new(0.408602148, 0, 0.697183073, 0),Rotation=0,Selectable=true,Size=UDim2.new(0, 54, 0, 25),SizeConstraint=Enum.SizeConstraint.RelativeXY,Visible=true,ZIndex=1,Name='SetFOVSize',Parent = main})
+SetFOVSize.MouseButton1Down:connect(function()
+	Aiming.FOV = FOV_Size_Value.Text
+end)
+
+local SetFOVShape = CreateInstance('TextButton',{Font=Enum.Font.SciFi,FontSize=Enum.FontSize.Size24,Text='Set',TextColor3=Color3.new(1, 1, 1),TextScaled=false,TextSize=22,TextStrokeColor3=Color3.new(0, 0, 0),TextStrokeTransparency=1,TextTransparency=0,TextWrapped=false,TextXAlignment=Enum.TextXAlignment.Center,TextYAlignment=Enum.TextYAlignment.Center,AutoButtonColor=true,Modal=false,Selected=false,Style=Enum.ButtonStyle.Custom,Active=true,AnchorPoint=Vector2.new(0, 0),BackgroundColor3=Color3.new(0.176471, 0.176471, 0.176471),BackgroundTransparency=0,BorderColor3=Color3.new(1, 1, 1),BorderSizePixel=1,ClipsDescendants=false,Draggable=false,Position=UDim2.new(0.408602148, 0, 0.806338012, 0),Rotation=0,Selectable=true,Size=UDim2.new(0, 54, 0, 25),SizeConstraint=Enum.SizeConstraint.RelativeXY,Visible=true,ZIndex=1,Name='SetFOVShape',Parent = main})
+SetFOVShape.MouseButton1Down:connect(function()
+	print("FOV Shape is Patched.")
+end)
+
+local SetHitChance = CreateInstance('TextButton',{Font=Enum.Font.SciFi,FontSize=Enum.FontSize.Size24,Text='Set',TextColor3=Color3.new(1, 1, 1),TextScaled=false,TextSize=22,TextStrokeColor3=Color3.new(0, 0, 0),TextStrokeTransparency=1,TextTransparency=0,TextWrapped=false,TextXAlignment=Enum.TextXAlignment.Center,TextYAlignment=Enum.TextYAlignment.Center,AutoButtonColor=true,Modal=false,Selected=false,Style=Enum.ButtonStyle.Custom,Active=true,AnchorPoint=Vector2.new(0, 0),BackgroundColor3=Color3.new(0.176471, 0.176471, 0.176471),BackgroundTransparency=0,BorderColor3=Color3.new(1, 1, 1),BorderSizePixel=1,ClipsDescendants=false,Draggable=false,Position=UDim2.new(0.408602148, 0, 0.911971807, 0),Rotation=0,Selectable=true,Size=UDim2.new(0, 54, 0, 25),SizeConstraint=Enum.SizeConstraint.RelativeXY,Visible=true,ZIndex=1,Name='SetHitChance',Parent = main})
+SetHitChance.MouseButton1Down:connect(function()
+	Aiming.HitChance = HitChance_Value.Text
+end)
