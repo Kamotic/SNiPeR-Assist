@@ -1,4 +1,4 @@
-print("Welcome to SNiPeR Assist Da Hood Edition! Credits: Kamotic#7869 on Discord.")
+--
 if getgenv().Aiming then return getgenv().Aiming end
 
 -- // Services
