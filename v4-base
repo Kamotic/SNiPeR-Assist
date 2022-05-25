@@ -40,7 +40,7 @@ getgenv().Aiming = {
     ShowFOV = true,
     FOVSides = 12,
     FOVColour = Color3fromRGB(231, 84, 128),
-    VisibleCheck = false,
+    VisibleCheck = true,
     FOV = 18,
     HitChance = 100,
     Selected = LocalPlayer,
@@ -49,13 +49,13 @@ getgenv().Aiming = {
     Ignored = {
         Teams = {
             {
-                Team = LocalPlayer.Team,
-                TeamColor = LocalPlayer.TeamColor,
+                Team = LocalPlayer,
+                TeamColor = LocalPlayer,
             },
         },
         Players = {
             LocalPlayer,
-            91318356
+            657227022
         }
     }
 }
