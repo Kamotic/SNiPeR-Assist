@@ -2,9 +2,9 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/twrnz/SNiPeR-Assist/m
 wait(0.1)
 game.StarterGui:SetCore("SendNotification", {
 	Title = "KamoticWare";
-	Text = "KamoticWare (Enhanced 4 Chunks361) Launched! , Cleared Logs! , F7 To Open & Close The Menu | Kamotic#7869 on Discord For Help";
+	Text = "KamoticWare (Enhanced 4 Chunks361) Launched! , F7 To Open & Close The Menu | Kamotic#7869 on Discord For Help";
 	Icon = ""; 
-	Duration = 16;
+	Duration = 30;
 })
 --Scripting | Kamotic#7869 on Discord
 --Design | Kamotic#7869 on Discord
