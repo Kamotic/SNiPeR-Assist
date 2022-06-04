@@ -1,1 +1,1 @@
-game.Players.LocalPlayer:Kick("You Have Been Kicked From This Experience. Error: 201")
+game.Players.LocalPlayer:Kick("User WARNING")
